@@ -1,18 +1,37 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset = "UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href = "style.css">
-	<script scr="1.js" defer></script>
+	<script> var radio = document.getElementById ('prim');
+
+for (var i=0; i<radio.length; i++) {
+	radio[i].onchange = testRadio;
+}
+
+function testRadio() {
+	console.log (this.value);
+}
+
+document.getElementById('one').onclick = checkRadio;
+
+function checkRadio(){
+	var m = document.getElementsByClassName('prim');
+	for (var i=0; i<m.length; i++){
+		if (m[i].checked ) {
+			alert( m[i].value );
+			break;
+		}
+	}
+}</script>
 	</head>
 	<body>
 	<p><input type="radio" name="prim" value 
-	="Яблоки"> Яблоки</p>
+	="1"> 1</p>
 	<p><input type="radio" name="prim" value 
-	="Груши"> Груши</p>
+	="2"> 2</p>
 	<p><input type="radio" name="prim" value 
-	="Сливи"> Сливы</p>
+	="3"> 3</p>
 	<button id="one">Жми</button>
 	
 	</body>
