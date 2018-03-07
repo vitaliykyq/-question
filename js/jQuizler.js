@@ -71,7 +71,7 @@
 
                 $.each(questions, function(index, question){
                     html += "<div id=\"question-" + (index + 1) + "\" class=\"slide-container question\">";
-                    //html += "<div class=\"question-number\">Вопрос " + (index + 1) + ' из ' + questions.length + "</div><div style=\"margin:0px; clear:both\"></div>";
+                    //html += "<div class=\"question-number\">Питання " + (index + 1) + ' из ' + questions.length + "</div><div style=\"margin:0px; clear:both\"></div>";
 
                     html += question.question;
 
@@ -172,13 +172,13 @@
                                 element.removeClass("btn-info");
                                 element.addClass("btn-success");
 
-                                buttonsHTML += "<button class=\"btn btn-success\"><i class='icon-ok-sign icon-white'></i> Вопрос " + (index+1) + "</button>";
+                                buttonsHTML += "<button class=\"btn btn-success\"><i class='icon-ok-sign icon-white'></i> Питання " + (index+1) + "</button>";
                                 rightAnswers++;
                             } else {
                                 element.removeClass("btn-info");
                                 element.addClass("btn-danger");
 
-                                buttonsHTML += "<button class=\"btn btn-danger\"><i class='icon-remove-sign icon-white'></i> Вопрос " + (index+1) + "</button>";
+                                buttonsHTML += "<button class=\"btn btn-danger\"><i class='icon-remove-sign icon-white'></i> Питання " + (index+1) + "</button>";
 
                                 for (var i=0; i<question.correct.length; i++) {
                                     element.parent().find('li').eq(question.correct[i]).addClass("btn-success");
