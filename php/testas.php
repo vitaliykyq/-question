@@ -1,5 +1,5 @@
 <?php
-$db = mysql_connect('localhost','vitaliykyq','ginumu21');
+$db = mysql_connect('localhost','id5024505_vitaliykyq','ginumu21');
 mysql_select_db('test',$db);
 mysql_query ("set_client='utf8'");
 
