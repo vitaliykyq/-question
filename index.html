@@ -1,51 +1,86 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <title>Тег table</title>
- </head>
- <link rel="import" href="/html/qwerty.html">
- <body>
- <?php include "php/testas.php";  ?>
-  <table border="1">
-   <tr>
-    <th>№</th>
-    <th>Ім'я</th>
-	<output type="text" name="name" ></output>
-	<th>Прізвище</th>
-	<th>По батькові</th>
-	<th>Дата</th>
-	<th>Кількість балів</th>
-   </tr>
-   <tr>
-    <th>1</th>
-    <th>
-	<?php
-		$result = mysql_query("SELECT * FROM test");
-		$myrow = mysql_fetch_array($result);
-	?>
-	</th>
-	<th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-  </tr>
-  <tr>
-    <th>2</th>
-    <th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-	</tr>
-	 <tr>
-    <th>3</th>
-    <th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-	<th></th>
-  </tr>
- </table>
- </body>
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+<title>Demadgo</title>
+<meta http-equiv="content-type" content="text/html; charset=utf8" />
+<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
+<link rel="stylesheet" type="text/css" href="button.css" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+.colortext {
+     color: red; /* Красный цвет выделения */
+   }
+   
+   .colortext2 {
+     color: yellow; /* Красный цвет выделения */
+   }
+   
+   .colortext3 {
+     color: green; /* Красный цвет выделения */
+   }
+ 
+	.rightpic {
+    float: right; /* Выравнивание по правому краю */
+    margin: 0 0 0px 0px; /* Отступы вокруг фотографии */
+   }
+
+  </style>
+  <body style="background: cadetblue;">
+<div id="holder">
+  <div id="header">
+    <img src="img/Dem.png"class="rightpic">
+	
+  </div>
+  <div id="menu"> <a href="https://www.youtube.com/channel/UCegvHEAYL-ka1_3cHv4ksZw" class="button button-darkblue"style="width: 200px;"><span class="colortext2">• </span>YouTube Demadgo</a>
+  <a href="https://www.youtube.com/channel/UCLf3il5vMONrD4GnV8NDYSg"class="button button-darkblue"style="width: 200px;"><span class="colortext3">• </span>YouTube Ordinarius Gamers</a>
+  <a href="https://www.youtube.com/channel/UCLf3il5vMONrD4GnV8NDYSg"class="button button-darkblue"><class="colortext3"><script type="text/javascript" language="JavaScript1.2">
+var message="Обо мне"
+var neonbasecolor="#ffffff"
+var neontextcolor="red"
+var neontextcolor2="#000"
+var flashspeed=100
+var flashingletters=3
+var flashingletters2=1
+var flashpause=0
+var n=0
+if (document.all||document.getElementById){
+   document.write('<font color="'+neonbasecolor+'" size=+2>')
+   for (m=0;m<message.length;m++)
+    document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+   document.write('</font>')
+}
+else
+   document.write(message)
+function crossref(number){
+   var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+   return crossobj
+}
+function neon(){
+   //Change all letters to base color
+   if (n==0){
+    for (m=0;m<message.length;m++)
+    crossref(m).style.color=neonbasecolor
+    }
+   crossref(n).style.color=neontextcolor
+   if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2
+   if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+   if (n<message.length-1) n++
+   else{
+    n=0
+    clearInterval(flashing)
+    setTimeout("beginneon()",flashpause)
+    return
+    }
+}
+function beginneon(){
+   if (document.all||document.getElementById)
+   flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+</script></a>
+  <a href="https://discord.gg/JvxeJdh"class="button button-darkblue"style="width: 200px;"><span class="colortext">•</span> Discord</a></div>
+  <div id="undermenu"></div>
+  <div id="content">
+</div>
+</body>
 </html>

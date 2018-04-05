@@ -1,0 +1,1 @@
+<div id="menu"> <a href="index.php">Главная</a> <a href="#">Услуги</a> <a href="#">Товары</a><a href="#">Контакты</a> </div>
