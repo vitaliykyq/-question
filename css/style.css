@@ -324,8 +324,7 @@ body {
    
 	.rightpic {
     float: center; /* Выравнивание по правому краю */
-	max-width: auto; 
-	height: auto;
+	background-size: 100%; /* Современные браузеры */
     margin: 0 0 0px 0px; /* Отступы вокруг фотографии */
    }
 
