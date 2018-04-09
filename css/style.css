@@ -120,6 +120,9 @@ body {
   margin: 12px;
 }
 
+.header{
+	background-size: 100%; /* Современные браузеры */
+}
 .button {
 	  position: relative;
 	  display: inline-block;
