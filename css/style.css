@@ -47,6 +47,7 @@ table {
   border-spacing: 0;
 }
 
+
 .about {
   margin: 70px auto 40px;
   padding: 8px;
@@ -324,7 +325,11 @@ body {
    
 	.rightpic {
     float: center; /* Выравнивание по правому краю */
-	background-size: 100%; /* Современные браузеры */
+	width: 100%;
+border: 0;
+left: 0;
+right: 0;
+z-index: -1;
     margin: 0 0 0px 0px; /* Отступы вокруг фотографии */
    }
 
