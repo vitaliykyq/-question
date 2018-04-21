@@ -1,75 +1,188 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Demadgo</title>
-<meta http-equiv="content-type" content="text/html; charset=utf8" />
-<!--<link rel="stylesheet" type="text/css" href="style.css" />-->
-<link rel="stylesheet" type="text/css" href="button.css" />
-<link rel="stylesheet" href="css/style.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Demadgo</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-  <body class="BODY123">
-<div id="holder">
-  <div id="header">
-    <img src="https://i.imgur.com/uOY1EBj.jpg"class="rightpic"> 
-	
-  </div>
-  <div id="menu"> 
-  <a href="https://vk.com/id253325778"class="button button-darkblue"style="width: 220px;"><span class="colortext4">• </span>VK</a><a href="https://www.youtube.com/channel/UCegvHEAYL-ka1_3cHv4ksZw" class="button button-red"style="width: 220px;" ><span class="colortext2">• </span><span class="textcolor">You</span><span class="textcolor2">Tube</span> Demadgo</a><a href="index.html"class="button button-red"style="width: 210px;"><class="colortext3"><script type="text/javascript" language="JavaScript1.2">
-var message="Главная"
-var neonbasecolor="#ffffff"
-var neontextcolor="red"
-var neontextcolor2="#000"
-var flashspeed=100
-var flashingletters=3
-var flashingletters2=1
-var flashpause=0
-var n=0
-if (document.all||document.getElementById){
-   document.write('<font color="'+neonbasecolor+'" size=+2>')
-   for (m=0;m<message.length;m++)
-    document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
-   document.write('</font>')
-}
-else
-   document.write(message)
-function crossref(number){
-   var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
-   return crossobj
-}
-function neon(){
-   //Change all letters to base color
-   if (	n==0){
-    for (m=0;m<message.length;m++)
-    crossref(m).style.color=neonbasecolor
-    }
-   crossref(n).style.color=neontextcolor
-   if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2
-   if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
-   if (n<message.length-1) n++
-   else{
-    n=0
-    clearInterval(flashing)
-    setTimeout("beginneon()",flashpause)
-    return
-    }
-}
-function beginneon(){
-   if (document.all||document.getElementById)
-   flashing=setInterval("neon()",flashspeed)
-}
-beginneon()
-</script></a><a href="https://www.youtube.com/channel/UCLf3il5vMONrD4GnV8NDYSg"class="button button-red"style="width: 230px;"><span class="colortext3">• </span><span class="textcolor">You</span><span class="textcolor2">Tube</span> Ordinarius Gamers</a><a href="https://discord.gg/JvxeJdh"class="button button-darkblue"style="width: 200px;"><span class="colortext">•</span> Discord</a></div>
-  <div id="undermenu"></div>
-  <div id="content">
-  <p class="font1" style="color:white" align="center"> <br>Обо мне</br></p><br>
-  <p class ="font2" style="color:white"> Всем хай друзья!!!<br>
-  Буду рад не много рассказать о себе и о канале.<br>
-  На канале будут лп, разговорные видео, информационные, а дальше по смотрим как пойдет. (Тише еду дальше буду)<br>
-  Я являюсь самым обычным и простым парнем который любит по играть в разные игры.<br>
-  Любимый жанр игр это выживание,где ты начинаешь с г*вна и палок и по мере развития добиваешься чего либо.<br>
-  Например такие игры: Factorio,minecraft,Rust и другие.... <br>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Demadgo</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Demadgo</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://vk.com/id253325778">VK</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCLf3il5vMONrD4GnV8NDYSg">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/yVbcP">Discord</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+		
+            <div class="row">
+                <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+                    <div class="site-heading">
+                        <h1></h1>
+                        <!--	<hr class="qqsmall">-->
+                        <span class="qqsubheading"></span>
+						
+                    </div>
+					
+                </div>
+				
+            </div>
+			
+        </div>
+		
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+		
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			
+			<!--col-lg-8 текст по правый край col-lg-offset-2 чуточку левее  col-md-10 col-md-offset-1 -->		
+                <div class="post-preview">
+                    <a href="#">
+						<h2 class="post-title">
+                            Обо мне
+                        </h2>
+						
+                        <!--<h3 class="post-subtitle">
+                            Подтекст
+                        </h3>-->
+                    </a>
+					
+                   <p class="post-meta">Всем хай друзья!!!
+  Буду рад не много рассказать о себе и о канале.
+  На канале будут лп, разговорные видео, информационные, а дальше по смотрим как пойдет. (Тише еду дальше буду)
+  Я являюсь самым обычным и простым парнем который любит по играть в разные игры.
+  Любимый жанр игр это выживание,где ты начинаешь с г*вна и палок и по мере развития добиваешься чего либо.
+  Например такие игры: Factorio,minecraft,Rust и другие.... 
   Я могу играть во все что угодно, зависит от желания. Например мы играем факторио, craft the world, цивилизацию, стеларис, симулятор какой то и тут на тебе ты получаешь лп по майнкрафту.<br>
-  Меня зовут Александр мой никнейм Demadgo, мне 21 год, живу в Украине и что же, устраивайся по удобнее =)
-  <!--<strong><font color="#000000" size="+3" text-align:  center>Обо мне</font></strong>-->
-</div>
+  Меня зовут Александр мой никнейм Demadgo, мне 21 год, живу в Украине и что же, устраивайся по удобнее =) <!--<a href="#">Ссылка</a>--> </p>
+					</div>
+                 <!--<hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Текст(ссылка)
+                        </h2>
+                    </a>
+                    <p class="post-meta">Текст <a href="#">Ссылка</a> Текст</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Текст(ссылка)
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Подтекст
+                        </h3>
+                    </a>
+                    <p class="post-meta">Текст <a href="#">Ссылка</a> Текст</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post.html">
+                        <h2 class="post-title">
+                            Текст(ссылка)
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Подтекст
+                        </h3>
+                    </a>
+                    <p class="post-meta">Текст <a href="#">Ссылка</a> Текст</p>
+                </div>-->
+                                <!-- Pager -->
+                
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted"> Created by <a class="post-preview" href="https://vk.com/vitaliykyq">vitaliykyq</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
 </body>
+
 </html>
