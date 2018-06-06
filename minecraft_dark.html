@@ -21,7 +21,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link rel="import" href="/menu.html">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,31 +33,38 @@
     font-family: Matura MT Script Capitals; /* Гарнитура шрифта */ 
     font-size: 300%; /* Размер текста */ 
     font-weight: lighter; /* Светлое начертание */ 
-	margin-right: 100px;
    }
-   .font12{
-   margin-left: 50px;
-   position: absolute
-   }
-   .font2{
-   margin-right: 300px;
-   }
-   
-   .font22{
-   margin-right: 220px;
-   }
-   
    
    .fonet {
-   background-image: url(img/fon4.png);
+   background-image: url(img/fon3.png);
    }
-   .fona1{
-   width:70%;
+   .cart1{
+   text-align: center
    }
-   .fona2{
-   width:30%;
+   .fig {
+    text-align: left; /* Выравнивание по центру */ 
+	margin-left: 100px;
+   }
+   .fig2 {
+    text-align: right; /* Выравнивание по центру */ 
+	margin-left: 150px;
+   }
+   .fig3 {
+    text-align: right; /* Выравнивание по центру */ 
+	margin-left: 100px;
+   }
+   .fig4 {
+    text-align: right; /* Выравнивание по центру */ 
+	margin-right: 100px;
    }
    
+   img#bottom {
+  position:absolute;
+  left:0;
+}
+img#top {
+  position:relative;
+}
    </style>
 	
 	
@@ -75,9 +82,9 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="index.html"style="cursor : url(img/Arrow.cur), default;">Demadgo</a>
-				<p><a href="index_dark.html"><img src="img/sun.png"style="cursor : url(img/Arrow.cur), default;" width="50" height="50"></a></a>
             </div>
 
+            
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -90,13 +97,13 @@
                         <a href="https://discord.gg/JvxeJdh"style="cursor : url(img/Arrow.cur), default;">Discord</a>
                     </li>
 					<li>
-                        <a href="video.html"style="cursor : url(img/Arrow.cur), default; ">Видео<span style="vertical-align: 5px; font-size: 0.8em; color: red;">АЛЬФА</span></a>
+                        <a href="video_dark.html"style="cursor : url(img/Arrow.cur), default; ">Видео<span style="vertical-align: 5px; font-size: 0.8em; color: red;">АЛЬФА</span></a>
                     </li>
                     <li>
-                        <a href="donate.html"style="cursor : url(img/Arrow.cur), default;">Донатеры</a>
+                        <a href="donate_dark.html"style="cursor : url(img/Arrow.cur), default;">Донатеры</a>
                     </li>
 					<li>
-                        <a href="info.html"style="cursor : url(img/Arrow.cur), default;">Обо мне</a>
+                        <a href="info_dark.html"style="cursor : url(img/Arrow.cur), default;">Обо мне</a>
                     </li>
                 </ul>
             </div>
@@ -112,13 +119,25 @@
                 <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
                     <div class="site-heading">
 					    </header>
-						<p class="font12" style="cursor : url(img/Arrow.cur), default;" align="left" style="width:70%">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLYZ77t3GdVJiJxrTqYVWPwqYvt-XMJHK5" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-						<br></br>
-						<p class="font1 font2" style="color:black cursor : url(img/Arrow.cur), default;" align="right" style="width:20%">Нас уже:<br> </p>
-<p class="font1 font22" style="color:black cursor : url(img/Arrow.cur), default;" align="right"><iframe height="80px" width="30%" frameborder="0" src="https://akshatmittal.com/youtube-realtime/embed/#!/UCegvHEAYL-ka1_3cHv4ksZw" style="border: 0;cursor : url(img/Arrow.cur), default; width:300px; height:80px;  "></iframe>
+  <a class="fig" href="darkmine.html">
+  <img style="cursor : url(img/Arrow.cur), default;" src="img/darkmine.jpg" width="460" height="215"></a><a href="minecraft.html" class = "fig2">
+ 
+ <a class="fig4" href="minigames.html">
+  <img style="cursor : url(img/Arrow.cur), default;" src="img/MiniGames.jpg" width="460" height="215"></a><a href="minecraft.html" class = "fig2">
+  <br></br>
+  <a class="fig" href="craftein.html">
+  <img style="cursor : url(img/Arrow.cur), default;" src="img/EinCraft.png" width="460" height="215"></a><a href="craftein.html" class = "fig2">
+  <br></br>
+  <a class="fig" href="factorio.html">
+  <img class = "fig3" id="bottom" src="img/ExCraft.jpg" width="460" height="215"></a>
+  <img id="top" src="img/razrobotka.png" width="460" height="215"></a><a href="minecraft.html" class = "fig2">
 
+ <br></br> 
+ <a class="fig" href="factorio.html">
+ <img class = "fig3" id="bottom" src="img/SideMC.jpg" width="460" height="215"></a>
+  <img id="top" src="img/razrobotka.png" width="460" height="215"></a><a href="minecraft.html" class = "fig2">
 
+ <br></br> <br></br>
                        <!-- <h1></h1>
                         <!--	<hr class="qqsmall">-->
                        <!-- <span class="qqsubheading"></span>-->
@@ -195,8 +214,16 @@
             </div>
         </div>
     </div>
-
-
+	<div>
+ <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted"> Created by <a style="cursor : url(img/Arrow.cur), default; class="post-preview" href="https://vk.com/vitaliykyq">vitaliykyq</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- jQuery -->
     <script  src="vendor/jquery/jquery.min.js"></script>
 
