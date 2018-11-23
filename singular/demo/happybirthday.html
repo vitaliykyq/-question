@@ -46,7 +46,7 @@
 	<![endif]-->
 
 	</head>
-	<!--
+
 	<style>
 #popup {
   display: table;
@@ -56,7 +56,7 @@
   width: 100%;
   background: rgba(240,240,240,.9);
   visibility: hidden;
-  animation: animaciya 1s 5s forwards; /* 5s - это количество секунд по истечении которых появляется сообщение */ 
+  animation: animaciya 1s 1s forwards; /* 5s - это количество секунд по истечении которых появляется сообщение */ 
   cursor: pointer;
 }
 @keyframes animaciya {   
@@ -68,11 +68,11 @@
   vertical-align: middle;
 }
 #popup div, #popup figcaption, #popup figure:before {
-  max-width: 500px; /* максимальная ширина */ 
+  max-width: 620px; /* максимальная ширина */ 
   margin: 0 auto;
   border-style: solid; 
   border-color: rgb(88,125,164);
-  background: #fff;
+  background: black;
 }
 #popup figure:before { /* стиль кнопки "закрыть" */ 
   content: "закрыть";
@@ -104,12 +104,24 @@
   border-width: 0 4px 4px 4px;
   border-radius: 0 0 5px 5px;
 }
+.imgtopp{
+	margin-bottom:0px;
+	padding:0px;
+	line-height:0px;
+}
 </style>
 
 <div id="popup">
   <figure>
     <figcaption>С Днём Рождения</figcaption>
-    <div>содержание</div>
+    <div>
+    	
+	<img class="imgtopp" src="img/happy.gif">
+	<img class="imgtopp" src="img/birthday.gif">
+	<img class="imgtopp" src="img/Demadgo.gif">
+
+
+    </div>
   </figure>
 </div>
 
@@ -128,11 +140,8 @@ if(localStorage.getItem('popup1')) {
   document.getElementById('popup').style.display='none';
 }
 </script>
--->
+
 	<body>
-	<img src="img/happy.gif">
-	<img src="img/birthday.gif">
-	<img src="img/Demadgo.gif">
 
 	<!--<br>
 	<br>
