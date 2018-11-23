@@ -131,9 +131,18 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 50%;
   border-radius: 50%;
   border: 10px solid #fff;
+  transition: 0.5s linear;
 }
 #fh5co-header .bio-photo a:after {
   display: none !important;
+}
+
+#fh5co-header .bio-photo img:hover {
+ border-color:red dimgray red dimgray;
+ box-shadow:0 0 10px #0285E2;
+ -moz-box-shadow:0 0 10px #0285E2;
+ -webkit-box-shadow:0 0 10px #0285E2;
+ transition: 0.5s linear;
 }
 
 #fh5co-main {
